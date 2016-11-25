@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mdlamini <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tmugadza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/05/10 12:37:27 by mdlamini          #+#    #+#             */
-/*   Updated: 2016/05/11 13:15:24 by mdlamini         ###   ########.fr       */
+/*   Created: 2016/11/25 17:24:03 by tmugadza          #+#    #+#             */
+/*   Updated: 2016/11/25 17:30:52 by tmugadza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,12 @@ char		*ft_strstr(const char *in, const char *str)
 			{
 				cnt++;
 				index++;
-				//printf("cnt:%i len:%i\n\n", cnt, len);
 			}
 			index = ft_strlen(in) - 1;
 		}
 		index++;
 	}
 	if (cnt != len)
-		return (char *) 0;
-	return ((char *) str);
+		return ((char *)0);
+	return ((char *)str);
 }

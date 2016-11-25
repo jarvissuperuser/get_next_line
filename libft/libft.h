@@ -6,7 +6,7 @@
 /*   By: tmugadza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/09 11:37:21 by tmugadza          #+#    #+#             */
-/*   Updated: 2016/05/10 16:13:28 by tmugadza         ###   ########.fr       */
+/*   Updated: 2016/11/25 17:03:10 by tmugadza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ int		ft_strcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strstr(const char *in, const char *str);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strsub(const char *s, unsigned int start, size_t len);
-char	*ft_strjoin(const char* s1, const char* s2);
-char	*ft_strncat(char *dst, const char *src,size_t n);
+char	*ft_strjoin(const char *s1, const char *s2);
+char	*ft_strncat(char *dst, const char *src, size_t n);
 char	*ft_strcat(char *dst, const char *src);
 char	*ft_strnew(size_t size);
-size_t	ft_strlcat(char* dst, const char* src, size_t n);
+size_t	ft_strlcat(char *dst, const char *src, size_t n);
 void	ft_putchar(char c);
 void	ft_do(int *i, char *s, int *index);
 int		ft_atoi(const char *c);

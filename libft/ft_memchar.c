@@ -6,7 +6,7 @@
 /*   By: tmugadza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/11 15:59:38 by tmugadza          #+#    #+#             */
-/*   Updated: 2016/05/11 16:40:32 by tmugadza         ###   ########.fr       */
+/*   Updated: 2016/11/25 17:41:00 by tmugadza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,11 @@ void	*ft_memchar(const void *s, const char c, size_t n)
 	char		*st;
 	void		*r;
 
-	a =(char *)(const char *) s;
+	a = (char *)(const char *)s;
 	r = (char *)a;
-	if(n){
-		while(n--)
+	if (n)
+	{
+		while (n--)
 		{
 			if (*a++ == c)
 				return ((char *)(const char *)a);
@@ -35,5 +36,3 @@ void	*ft_memchar(const void *s, const char c, size_t n)
 	else
 		return (r);
 }
-
-
