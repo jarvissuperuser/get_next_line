@@ -58,12 +58,13 @@ int		get_next_line(int fd, char **line)
 
 	if (fd>=0){
 		if (s==NULL)
-			s = ft_strnew(BUFFSIZE +1 );
-		tmp = ft_strnew(BUFFSIZE +1);
+			s = ft_strnew(BUFFSIZE + 1);
+		tmp = ft_strnew(BUFFSIZE + 1);
 		while ((e = read(fd,tmp,BUFFSIZE))&& !haschr(s, EOF))
 		{
 			s = ft_strcat(s,tmp);
-			if ((haschr(s, 10) || haschr(s, 0))&&!((s[0] == 10) && s[BUFFSIZE] == 10))
+			if ((haschr(s, 10) || haschr(s, 0))&&
+					!((s[0] == 10) && s[BUFFSIZE] == 10))
 				break; 
 		}
 		free(tmp);

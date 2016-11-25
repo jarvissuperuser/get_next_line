@@ -6,7 +6,7 @@ char	*ft_strdup(const char *s)
 	char	*f;
 	int		l;
 
-	f = (char *)malloc(sizeof(char *) * ft_strlen(s) +1);
+	f = (char *)malloc(sizeof(char *) * ft_strlen(s) + 1);
 	l = 0;
 	while(s[l])
 	{
@@ -14,6 +14,6 @@ char	*ft_strdup(const char *s)
 		l++;
 	}
 	f[l] = '\0';
-	return f;
+	return (f);
 }
 
