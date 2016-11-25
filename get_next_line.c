@@ -28,7 +28,7 @@ int		poschr(const char * s, char c)
 	return (0);
 } 
 
-void	subrout(char **s, char **l,int e)
+void	subrout(char **s, char **l, int e)
 {
 	char	*tmp;
 	char	*a;
@@ -40,7 +40,7 @@ void	subrout(char **s, char **l,int e)
 		*l = ft_strdup(tmp);
 		free(tmp);
 		a = *s;
-		*s = ft_strsub(*s, i+1, ft_strlen(*s));
+		*s = ft_strsub(*s, i + 1, ft_strlen(*s));
 		free(a);
 	}
 	else if(e == 0)
