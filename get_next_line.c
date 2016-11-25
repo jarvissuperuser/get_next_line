@@ -46,7 +46,6 @@ void	subrout(char **s, char **l,int e)
 	else if(e == 0)
 	{
 		*l = ft_strdup(*s);
-		//ft_bzero(*s,ft_strlen(*s));
 	}
 }
 
@@ -58,22 +57,17 @@ int		get_next_line(int fd, char **line)
 	char		*tmp;
 
 	if (fd>=0){
-		if (s==NULL){
-			s = (char *)malloc(BUFFSIZE + 1);
-			ft_bzero(s,BUFFSIZE);
-		}
-		tmp = malloc(BUFFSIZE + 1);
-		tmp[BUFFSIZE] = '\0';
+		if (s==NULL)
+			s = ft_strnew(BUFFSIZE +1 );
+		tmp = ft_strnew(BUFFSIZE +1);
 		while ((e = read(fd,tmp,BUFFSIZE))&& !haschr(s, EOF))
 		{
 			s = ft_strcat(s,tmp);
 			if ((haschr(s, 10) || haschr(s, 0))&&!((s[0] == 10) && s[BUFFSIZE] == 10))
 				break; 
 		}
-		//printf("\nd1%s d1\n",s);
 		free(tmp);
-		
-		subrout(&s,line,e);//printf("\n\nd2 %s %i d2\nend\n",s,ft_strlen(s));
+		subrout(&s,line,e);
 		if (ft_strlen(s) == ft_strlen(*line)&& e== 0)
 		{
 			free(s);

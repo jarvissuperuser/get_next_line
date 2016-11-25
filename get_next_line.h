@@ -7,5 +7,5 @@
 # include <stdio.h>
 # define BUFFSIZE 32
 
-int get_next_line(int fd, char **line);
+int	get_next_line(int fd, char **line);
 #endif

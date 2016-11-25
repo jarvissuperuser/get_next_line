@@ -25,6 +25,7 @@ char	*ft_strsub(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char* s1, const char* s2);
 char	*ft_strncat(char *dst,const char *src,size_t n);
 char	*ft_strcat(char *dst,const char *src);
+char	*ft_strnew(size_t size);
 size_t	ft_strlcat(char* dst, const char* src, size_t n);
 void	ft_putchar(char c);
 void	ft_do(int *i, char *s, int *index);

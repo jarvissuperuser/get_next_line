@@ -41,6 +41,7 @@ ft_strstr.c \
 ft_strsub.c \
 ft_strjoin.c \
 ft_strdup.c \
+ft_strnew.c \
 
 OB = ft_atoi.o \
 ft_bzero.o \
@@ -65,6 +66,7 @@ ft_strstr.o \
 ft_strsub.o \
 ft_strjoin.o \
 ft_strdup.o \
+ft_strnew.o \
 
 all : $(TG)
 	#done
