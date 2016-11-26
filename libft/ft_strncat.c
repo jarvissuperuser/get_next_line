@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tmugadza <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/25 17:13:34 by tmugadza          #+#    #+#             */
+/*   Updated: 2016/11/25 17:14:33 by tmugadza         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 #include <stdlib.h>
 
@@ -23,5 +35,5 @@ char	*ft_strncat(char *dst, const char *src, size_t n)
 	newstr[cnt] = '\0';
 	free(dst);
 	dst = newstr;
-	return newstr;
+	return (newstr);
 }

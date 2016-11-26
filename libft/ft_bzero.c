@@ -6,18 +6,18 @@
 /*   By: tmugadza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/11 14:34:53 by tmugadza          #+#    #+#             */
-/*   Updated: 2016/06/11 10:06:13 by tmugadza         ###   ########.fr       */
+/*   Updated: 2016/11/25 17:49:10 by tmugadza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t i)
+void	ft_bzero(void *s, size_t i)
 {
 	unsigned char *t;
 
 	t = s;
-	while(i--)
+	while (i--)
 	{
 		*t++ = '\0';
 	}

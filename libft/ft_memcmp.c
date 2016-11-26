@@ -6,12 +6,12 @@
 /*   By: tmugadza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/11 15:59:38 by tmugadza          #+#    #+#             */
-/*   Updated: 2016/05/11 16:40:32 by tmugadza         ###   ########.fr       */
+/*   Updated: 2016/11/25 17:34:58 by tmugadza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-# include <stdlib.h>
+#include <stdlib.h>
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -25,10 +25,9 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (i < n)
 	{
 		if (*(a1 + i) != *(a2 + i))
-			return (*(a1 + i) - *(a2 + i)) ;
+			return (*(a1 + i) - *(a2 + i));
 		else
 			i++;
 	}
-	return 0;
-
+	return (0);
 }
