@@ -26,7 +26,7 @@ int		poschr(const char * s, char c)
 		cn++;
 	}
 	return (0);
-} 
+}
 
 void	subrout(char **s, char **l, int e)
 {
