@@ -22,7 +22,7 @@ char	*ft_strcat(char *dst, const char *src)
 
 	length = ft_strlen(dst);
 	ltotal = length + ft_strlen(src);
-	newstr = malloc(ltotali + 1);
+	newstr = malloc(ltotal + 1);
 	while (cnt < ltotal)
 	{
 		if (length > cnt)
