@@ -72,8 +72,9 @@ all : $(TG)
 	#done
 $(TG) : $(OB)
 	$(A) $(TG) $(OB)
+	ranlib $(TG)
 $(OB) :
 	$(C) $(FL)  $(src)
 	#building
-c :
+fclean :
 	rm -rf $(TG) $(OB)
