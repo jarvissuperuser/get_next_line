@@ -6,7 +6,7 @@
 /*   By: tmugadza <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/25 16:41:15 by tmugadza          #+#    #+#             */
-/*   Updated: 2016/11/25 16:41:19 by tmugadza         ###   ########.fr       */
+/*   Updated: 2016/12/09 12:43:00 by tmugadza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@
 # include <stdio.h>
 # define BUFFSIZE 8
 
-int	get_next_line(int fd, char **line);
+int	get_next_line(const int fd, char **line);
 #endif
