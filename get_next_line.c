@@ -62,6 +62,31 @@ void	subrout(char **s, char **l, int e)
 	}
 }
 
+char	*ft_strconcat(char *dst, const char *src)
+{
+	char	*newstr;
+	int		length;
+	int		ltotal;
+	int		cnt;
+
+	length = ft_strlen(dst);
+	ltotal = length + ft_strlen(src);
+	newstr = malloc(ltotal + 1);
+	while (cnt < ltotal)
+	{
+		if (length > cnt)
+			newstr[cnt] = dst[cnt];
+		else
+			newstr[cnt] = src[cnt - length];
+		cnt++;
+	}
+	newstr[cnt] = '\0';
+	free(dst);
+	dst = newstr;
+	return (newstr);
+}
+
+
 int		get_next_line(int fd, char **line)
 {
 	static char	*s;
@@ -75,7 +100,7 @@ int		get_next_line(int fd, char **line)
 		tmp = ft_strnew(BUFFSIZE + 1);
 		while ((e = read(fd, tmp, BUFFSIZE)) && !haschr(s, EOF))
 		{
-			s = ft_strcat(s, tmp);
+			s = ft_strconcat(s, tmp);
 			if ((haschr(s, 10) || haschr(s, 0)))
 				break ;
 		}
